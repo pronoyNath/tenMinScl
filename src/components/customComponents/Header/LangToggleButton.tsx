@@ -3,7 +3,6 @@
 import { Button } from "@/components/ui/button";
 import { useLang } from "@/providers/LangProvider";
 
-
 const LangToggleButton = () => {
   const { lang, toggleLang } = useLang();
 

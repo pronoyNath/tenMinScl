@@ -1,3 +1,4 @@
+import { cookies } from "next/headers";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { LangProvider } from "@/providers/LangProvider";
@@ -8,17 +9,20 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const cookieStore = await cookies();
+  const lang = (cookieStore.get("lang")?.value || "en") as "en" | "bn";
+
   return (
-    <html lang="en">
+    <html lang={lang}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <LangProvider>{children}</LangProvider>
+        <LangProvider lang={lang}>{children}</LangProvider>
       </body>
     </html>
   );

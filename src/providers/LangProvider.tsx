@@ -1,9 +1,9 @@
 "use client";
-
-import React, { createContext, useContext, useState, ReactNode } from "react";
+import React, { createContext, useContext, ReactNode } from "react";
+import { useRouter } from "next/navigation";
+import Cookies from "js-cookie";
 
 type LangType = "en" | "bn";
-
 type LangContextType = {
   lang: LangType;
   toggleLang: () => void;
@@ -11,11 +11,19 @@ type LangContextType = {
 
 const LangContext = createContext<LangContextType | undefined>(undefined);
 
-export const LangProvider = ({ children }: { children: ReactNode }) => {
-  const [lang, setLang] = useState<LangType>("en");
+export const LangProvider = ({
+  lang,
+  children,
+}: {
+  lang: LangType;
+  children: ReactNode;
+}) => {
+  const router = useRouter();
 
   const toggleLang = () => {
-    setLang((prev) => (prev === "en" ? "bn" : "en"));
+    const newLang = lang === "en" ? "bn" : "en";
+    Cookies.set("lang", newLang, { expires: 7 });
+    router.refresh(); // SSR reload
   };
 
   return (
