@@ -120,3 +120,21 @@
     @apply bg-background text-foreground;
   }
 }
+
+@theme {
+  /* --font-primary: "Public Sans", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-HennyPenny: "Henny Penny", sans-serif;
+  --font-nova: "Nova Mono", monospace;
+  --font-roboto: "Roboto", sans-serif;
+  --color-primary: #810947;
+  --color-secondary: #464370; */
+  /* custom breakpoints */
+  --breakpoint-3xs: 375px; /* For small phones */
+  --breakpoint-2xs: 390px; /* For medium phones */
+  --breakpoint-xs: 480px; /* For small tablets */
+}
+@utility container {
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
