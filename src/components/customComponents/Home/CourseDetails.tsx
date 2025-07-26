@@ -1,12 +1,13 @@
 "use client";
 
+import Features from "./Features";
+import InstructorInfo from "./InstructorInfo";
+
 const CourseDetails = ({ courseData }: { courseData: any }) => {
   return (
-    <div>
-      <h1>{courseData?.title}</h1>
-      <div
-        dangerouslySetInnerHTML={{ __html: courseData?.description || "" }}
-      />
+    <div className="px-12 space-y-10">
+      <InstructorInfo courseData={courseData} />
+      <Features courseData={courseData}/>
     </div>
   );
 };

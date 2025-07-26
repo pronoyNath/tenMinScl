@@ -1,6 +1,44 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+@font-face {
+  font-family: "FontOne";
+  src: url("/fonts/fontOne.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FontTwo";
+  src: url("/fonts/fontTwo.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FontThree";
+  src: url("/fonts/fontThree.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer utilities {
+  .font-fontOne {
+    font-family: "FontOne", sans-serif;
+  }
+
+  .font-fontTwo {
+    font-family: "FontTwo", sans-serif;
+  }
+
+  .font-fontThree {
+    font-family: "FontThree", sans-serif;
+  }
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -135,6 +173,6 @@
   --breakpoint-xs: 480px; /* For small tablets */
 }
 @utility container {
-  margin-inline: auto;
+  /* margin-inline: auto; */
   padding-inline: 1rem;
 }
