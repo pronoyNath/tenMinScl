@@ -9,15 +9,13 @@ const CourseBuy = ({ courseData }: { courseData: CourseData }) => {
   return (
     <div>
     <div className="bg-white border font-fontTwo">
-      {/* <h1>{courseData?.title}</h1> */}
-      {/* etc */}
-      <div className="border-6 border-white">
+      <div className="hidden xl:block border-6 border-white">
         <MediaGallery media={courseData.media} />
       </div>
-      <div className="p-5 space-y-3">
+      <div className="hidden xl:block p-5 space-y-3">
         <div className="flex items-center gap-4  py-3">
           <div className="flex items-center gap-3">
-            <h3 className="text-2xl font-semibold font-fontTwo">৳ 3850</h3>
+            <h3 className="text-2xl lg:text-xl xl:text-2xl font-semibold font-fontTwo">৳ 3850</h3>
             <h3 className="line-through">৳5000</h3>
           </div>
 

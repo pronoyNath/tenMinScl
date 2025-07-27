@@ -13,6 +13,7 @@ export const getIeltsCourse = async (lang: string = "en") => {
       },
       next: {
         tags: ["ielts-course"],
+        revalidate: 3600,
       },
     });
 

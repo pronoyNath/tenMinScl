@@ -17,7 +17,7 @@ const ExclusiveFeature = ({ courseData }: { courseData: CourseData }) => {
         {section.values?.map((item, index) => (
           <div
             key={item.id}
-            className={`flex justify-between items-start gap-6 pb-6 ${
+            className={`flex flex-col md:flex-row justify-between items-start gap-6 pb-6 ${
               index !== section.values.length - 1 ? "border-b" : ""
             }`}
           >
@@ -35,7 +35,7 @@ const ExclusiveFeature = ({ courseData }: { courseData: CourseData }) => {
             </div>
 
             {/* Image Section */}
-            <div className="w-[200px] min-w-[200px]">
+            <div className="w-[200px] min-w-[200px] mx-auto md:mx-0">
               <Image
                 src={item.file_url}
                 alt={item.title}

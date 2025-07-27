@@ -200,3 +200,28 @@
   border-bottom: 12px solid transparent;
   border-right: 12px solid rgb(249, 123, 83);
 }
+
+/* @media (min-width: 768px) and (max-width: 1024px) {
+  .c-Tukmu .card-price {
+  position: relative;
+  background-color: rgb(249, 123, 83);
+  color: white;
+  padding: 2px 4px;
+  border-radius: 4px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.c-Tukmu .card-price::before {
+  content: "";
+  position: absolute;
+  left: -7px;
+  top: 1.5px;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-right: 8px solid rgb(249, 123, 83);
+}
+} */
