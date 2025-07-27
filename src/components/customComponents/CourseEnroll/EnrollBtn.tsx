@@ -1,11 +1,19 @@
+"use client";
+
 import React from "react";
 import styled from "styled-components";
+import clsx from "clsx";
 
-const EnrollBtn = ({ btnTxt }: { btnTxt: string }) => {
+const EnrollBtn = ({
+  btnTxt,
+  className = "",
+}: {
+  btnTxt: string;
+  className?: string;
+}) => {
   return (
     <StyledWrapper>
-      <button className="learn-more w-full text-white bg-[#1CAB55] ">
-        {" "}
+      <button className={clsx("learn-more bg-[#1cab55] text-white w-full", className)}>
         {btnTxt}
       </button>
     </StyledWrapper>
@@ -27,19 +35,13 @@ const StyledWrapper = styled.div`
 
   button.learn-more {
     font-weight: 600;
-    //    color: #382b22;
     text-transform: uppercase;
     padding: 0.7em 2em;
-    //    background: #1CAB55;
-    border: 2px solid ##1cab55;
+    border: 2px solid #1cab55;
     border-radius: 0.75em;
-    -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
-    -webkit-transition: background 150ms cubic-bezier(0, 0, 0.58, 1),
-      -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
     transition: transform 150ms cubic-bezier(0, 0, 0.58, 1),
-      background 150ms cubic-bezier(0, 0, 0.58, 1),
-      -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+      background 150ms cubic-bezier(0, 0, 0.58, 1);
   }
 
   button.learn-more::before {
@@ -47,18 +49,12 @@ const StyledWrapper = styled.div`
     content: "";
     width: 100%;
     height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    inset: 0;
     background: #14773b;
     border-radius: inherit;
-    -webkit-transform: translate3d(0, 0.75em, -1em);
     transform: translate3d(0, 0.75em, -1em);
     transition: transform 150ms cubic-bezier(0, 0, 0.58, 1),
-      box-shadow 150ms cubic-bezier(0, 0, 0.58, 1),
-      -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1),
-      -webkit-box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+      box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
   }
 
   button.learn-more:hover {
@@ -67,14 +63,11 @@ const StyledWrapper = styled.div`
 
   button.learn-more:active {
     background: #14773b;
-    -webkit-transform: translate(0em, 0.75em);
     transform: translate(0em, 0.75em);
   }
 
   button.learn-more:active::before {
-    -webkit-box-shadow: 0 0 0 2px #1cab55, 0 0 #14773b;
     box-shadow: 0 0 0 2px #1cab55, 0 0 #14773b;
-    -webkit-transform: translate3d(0, 0, -1em);
     transform: translate3d(0, 0, -1em);
   }
 `;

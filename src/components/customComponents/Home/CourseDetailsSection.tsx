@@ -25,14 +25,25 @@ const CourseDetailsSection = ({ courseData }: { courseData: any }) => {
           collapsible
           defaultValue={aboutSection?.values[0]?.id}
         >
-          {aboutSection.values.map((item: any) => (
-            <AccordionItem className="!border-b !border-dashed  !border-gray-300" value={item.id} key={item.id}>
-              <AccordionTrigger className="text-lg hover:no-underline">{parse(item.title)}</AccordionTrigger>
-              <AccordionContent className="space-y-2 text-[#4F5866] !text-lg font-fontThree">
-                {parse(item.description)}
-              </AccordionContent>
-            </AccordionItem>
-          ))}
+          {aboutSection.values.map((item: any, index: number) => {
+            const isLast = index === aboutSection.values.length - 1;
+            return (
+              <AccordionItem
+                key={item.id}
+                value={item.id}
+                className={`!border-dashed !border-gray-300 ${
+                  !isLast ? "!border-b" : ""
+                }`}
+              >
+                <AccordionTrigger className="text-lg hover:no-underline">
+                  {parse(item.title)}
+                </AccordionTrigger>
+                <AccordionContent className="space-y-2 text-[#4F5866] !text-lg font-fontThree">
+                  {parse(item.description)}
+                </AccordionContent>
+              </AccordionItem>
+            );
+          })}
         </Accordion>
       </div>
     </div>
