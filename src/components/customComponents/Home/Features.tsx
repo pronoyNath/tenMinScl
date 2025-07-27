@@ -12,7 +12,7 @@ const Features = ({ courseData }: { courseData: any }) => {
 
   return (
     <div className="font-fontTwo space-y-5">
-      <h2 className="text-xl font-semibold">{featuresSection?.name}</h2>
+      <h2 className="text-2xl font-semibold">{featuresSection?.name}</h2>
 
       <div className="bg-[#111827] text-white grid grid-cols-1 md:grid-cols-2  rounded-lg">
         {features.map((feature: any) => (

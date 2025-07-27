@@ -8,12 +8,13 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
-import "./styles.css"; // your Swiper styles
+import "./styles.css"; 
 import { IoPlay } from "react-icons/io5";
 import TransparentArrowButton from "./TransparentArrowButton";
+import type { Swiper as SwiperType } from 'swiper';
 
 export default function MediaCarousel({ media }: { media: any[] }) {
-  const [thumbsSwiper, setThumbsSwiper] = useState(null);
+  const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null);
   const [playingIndex, setPlayingIndex] = useState<number | null>(null);
 
   return (

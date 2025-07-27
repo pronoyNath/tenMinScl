@@ -13,7 +13,7 @@ const InstructorInfo = ({ courseData }: { courseData: any }) => {
 
   return (
     <div className="font-fontTwo space-y-5">
-      <h2 className="text-xl font-semibold">{instructorSection?.name}</h2>
+      <h2 className="text-2xl font-semibold">{instructorSection?.name}</h2>
 
       <div className="border border-[#e0e4eb] rounded-lg p-4">
         {instructors.map((instructor: any, idx: number) => (
