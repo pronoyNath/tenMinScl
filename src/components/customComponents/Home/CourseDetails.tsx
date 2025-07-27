@@ -10,6 +10,7 @@ const CourseDetails = ({ courseData }: { courseData: any }) => {
       <InstructorInfo courseData={courseData} />
       <Features courseData={courseData}/>
       <CourseDetailsSection courseData={courseData}/>
+      <div className="bg-red-200 min-h-screen"></div>
     </div>
   );
 };

@@ -21,8 +21,10 @@ export default async function HomePage() {
         <div className=" col-span-2 ">
           <CourseDetails courseData={courseData} />
         </div>
-        <div className=" col-span-1 -mt-[300px] z-20">
-          <CourseBuy courseData={courseData} />
+        <div className="col-span-1 -mt-[300px] min-h-full">
+          <div className="sticky top-10">
+            <CourseBuy courseData={courseData} />
+          </div>
         </div>
       </div>
     </div>
