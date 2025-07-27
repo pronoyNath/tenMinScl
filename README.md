@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# IELTS Course Landing Page
 
-## Getting Started
+![Project Thumbnail](./thumbnail.png)
 
-First, run the development server:
+## Live Demo
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+[https://ten-min-scl.vercel.app/](https://ten-min-scl.vercel.app/)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Overview
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project is a landing page for an IELTS course built with **Next.js**, **TypeScript**, and **TailwindCSS**. It features server-side rendering (SSR), incremental static regeneration (ISR), dynamic data fetching, and responsive design.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Dynamic **Course Title** and **Description** with HTML rendering.
+- Display of **Course Instructors** (API `sections` type: `instructor`).
+- Embedded **YouTube Trailer** player from course media.
+- Fixed **Price** value set to 1000 as per requirements.
+- Customizable **Call To Action (CTA)** text from API.
+- Support for **Localization** (English and Bengali).
+- Server-Side Rendering (SSR) for SEO and fast load times.
+- Incremental Static Regeneration (ISR) with Next.js for automatic data refreshing.
+- Detailed course layout via API `sections` type: `features`.
+- Learning objectives from `sections` type: `pointers`.
+- Exclusive course features and additional sections.
+- Dynamic checklist display.
+- Responsive and accessible design with TailwindCSS.
+- Code splitting and reusable React components.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Tech Stack
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Next.js 13+ (App Router)
+- React 18+
+- TypeScript
+- TailwindCSS
+- React Swiper (for media galleries)
+- Vercel (deployment)
+- API integration with fetch and ISR
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
