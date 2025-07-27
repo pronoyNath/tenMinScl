@@ -176,3 +176,27 @@
   /* margin-inline: auto; */
   padding-inline: 1rem;
 }
+
+
+.c-Tukmu .card-price {
+  position: relative;
+  background-color: rgb(249, 123, 83);
+  color: white;
+  padding: 3px 12px;
+  border-radius: 4px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.c-Tukmu .card-price::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 1.5px;
+  width: 0;
+  height: 0;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-right: 12px solid rgb(249, 123, 83);
+}

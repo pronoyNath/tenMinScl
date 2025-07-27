@@ -17,7 +17,7 @@ export default async function HomePage() {
       <div>
         <Title courseData={courseData} />
       </div>
-      <div className="container px-20  mx-auto grid grid-cols-3 items-start justify-between gap-5 py-10">
+      <div className="container px-20  mx-auto grid grid-cols-3 items-start justify-between gap-8 py-10">
         <div className=" col-span-2 ">
           <CourseDetails courseData={courseData} />
         </div>
