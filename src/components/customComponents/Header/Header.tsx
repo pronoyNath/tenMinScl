@@ -3,8 +3,8 @@ import Image from "next/image";
 
 const Header = () => {
   return (
-    <header className="  w-full px-10 py-3 border-b">
-      <div className="container mx-auto bg-background flex items-center justify-between">
+    <header className="sticky top-0 z-50 w-full bg-background border-b px-10 py-3">
+      <div className="container mx-auto flex items-center justify-between">
         <Image
           src="/logo/10mslogo-svg.svg"
           alt="10MinSchool Logo"

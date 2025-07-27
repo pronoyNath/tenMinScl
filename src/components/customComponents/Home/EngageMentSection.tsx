@@ -11,7 +11,7 @@ const EngageMentSection = ({ courseData }: { courseData: CourseData }) => {
 
   if (!section || !section.values?.length) return null;
 
-  const item = section.values[0]; // Assuming only one item for now
+  const item = section.values[0]; 
 
   return (
     <div
@@ -55,7 +55,7 @@ const EngageMentSection = ({ courseData }: { courseData: CourseData }) => {
 
         {/* Right Side Image */}
         <div className="w-full h-full md:w-1/2">
-          <div className="relative w-full h-[300px] md:h-[300px] rounded-xl overflow-hidden">
+          <div className="relative w-full h-[300px] md:h-[300px]  overflow-hidden">
             <Image
               src={item.thumbnail}
               alt="Thumbnail"

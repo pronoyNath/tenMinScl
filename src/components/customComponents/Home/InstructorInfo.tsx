@@ -35,7 +35,7 @@ const InstructorInfo = ({ courseData }: { courseData: CourseData }) => {
               )}
             </div>
             <div className="space-y-2">
-              <h3 className="flex items-center gap-2 hover:text-green-500 text-xl font-medium">
+              <h3 className="flex items-center gap-2 hover:text-green-500 text-xl font-medium w-fit cursor-pointer">
                 {instructor?.name || "Unnamed Instructor"}{" "}
                 <ChevronRight className="text-gray-400" />
               </h3>

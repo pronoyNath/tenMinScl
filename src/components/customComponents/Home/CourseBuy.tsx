@@ -47,9 +47,9 @@ const CourseBuy = ({ courseData }: { courseData: CourseData }) => {
       </div>
     </div>
     <div>
-     <div className="flex items-center justify-between py-3 text-sm">
+     <div className="flex items-center justify-between py-3 px-2 text-sm">
        <h3 className=" text-gray-400">কোর্সটি সম্পর্কে বিস্তারিত জানতে</h3>
-      <h3 className="flex items-center gap-1 underline text-green-600">
+      <h3 className="flex items-center cursor-pointer gap-1 underline text-green-600">
         <Phone className="h-5 w-5"/>
         ফোন করুন (16910)</h3>
      </div>

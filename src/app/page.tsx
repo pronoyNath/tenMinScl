@@ -22,11 +22,12 @@ export default async function HomePage() {
           <CourseDetails courseData={courseData} />
         </div>
         <div className="col-span-1 -mt-[300px] min-h-full">
-          <div className="sticky top-10">
+          <div className="sticky top-24">
             <CourseBuy courseData={courseData} />
           </div>
         </div>
       </div>
+      <div className="bg-black w-full text-white py-7 text-center">2015 - 2025 Copyright © 10 Minute School. All rights reserved.</div>
     </div>
   );
 }
