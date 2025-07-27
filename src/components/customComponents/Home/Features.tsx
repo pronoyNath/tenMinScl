@@ -1,11 +1,12 @@
+import { CourseData } from "@/types/type";
 import Image from "next/image";
 import React from "react";
 
-const Features = ({ courseData }: { courseData: any }) => {
+const Features = ({ courseData }: { courseData: CourseData }) => {
   if (!courseData?.sections) return null;
 
   const featuresSection = courseData.sections.find(
-    (section: any) => section.type === "features"
+    (section) => section.type === "features"
   );
 
   const features = featuresSection?.values || [];
@@ -15,7 +16,7 @@ const Features = ({ courseData }: { courseData: any }) => {
       <h2 className="text-2xl font-semibold">{featuresSection?.name}</h2>
 
       <div className="bg-[#111827] text-white grid grid-cols-1 md:grid-cols-2 gap-2 p-2 rounded-lg">
-        {features.map((feature: any) => (
+        {features.map((feature) => (
           <div
             key={feature.id}
             className="flex items-start gap-4 p-7 rounded-xl"

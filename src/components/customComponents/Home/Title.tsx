@@ -1,7 +1,7 @@
-import Image from "next/image";
+import { CourseData } from "@/types/type";
 import React from "react";
 
-const Title = ({ courseData }: { courseData: any }) => {
+const Title = ({ courseData }: { courseData: CourseData }) => {
   const bgImage =
     "https://cdn.10minuteschool.com/images/ui_%281%29_1716445506383.jpeg";
 

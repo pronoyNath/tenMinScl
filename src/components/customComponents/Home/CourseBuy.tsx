@@ -3,8 +3,9 @@
 import MediaGallery from "../CourseEnroll/MediaGallery";
 import EnrollBtn from "../CourseEnroll/EnrollBtn";
 import { Phone } from "lucide-react";
+import { CourseData } from "@/types/type";
 
-const CourseBuy = ({ courseData }: { courseData: any }) => {
+const CourseBuy = ({ courseData }: { courseData: CourseData }) => {
   return (
     <div>
     <div className="bg-white border font-fontTwo">
@@ -33,8 +34,8 @@ const CourseBuy = ({ courseData }: { courseData: any }) => {
             {/* course facilities  */}
             <ul className="space-y-2">
               {courseData?.checklist
-                ?.filter((item: any) => item.list_page_visibility)
-                .map((item: any) => (
+                ?.filter((item) => item.list_page_visibility)
+                .map((item) => (
                   <li key={item.id} className="flex items-center gap-3">
                     <img src={item.icon} alt="icon" className="w-5 h-5" />
                     <span>{item.text}</span>

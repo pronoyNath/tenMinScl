@@ -6,8 +6,9 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import parse from "html-react-parser";
+import { CourseData } from "@/types/type";
 
-const CourseDetailsSection = ({ courseData }: { courseData: any }) => {
+const CourseDetailsSection = ({ courseData }: { courseData: CourseData }) => {
   const aboutSection = courseData?.sections?.find(
     (section: any) => section.type === "about"
   );

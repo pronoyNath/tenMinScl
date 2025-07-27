@@ -1,12 +1,13 @@
+import { CourseData } from "@/types/type";
 import { ChevronRight } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 
-const InstructorInfo = ({ courseData }: { courseData: any }) => {
+const InstructorInfo = ({ courseData }: { courseData: CourseData }) => {
   if (!courseData?.sections) return null;
 
   const instructorSection = courseData.sections.find(
-    (section: any) => section.type === "instructors"
+    (section) => section.type === "instructors"
   );
 
   const instructors = instructorSection?.values || [];

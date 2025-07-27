@@ -2,10 +2,11 @@ import Image from "next/image";
 import React from "react";
 import EnrollBtn from "../CourseEnroll/EnrollBtn";
 import Link from "next/link";
+import { CourseData } from "@/types/type";
 
-const EngageMentSection = ({ courseData }: { courseData: any }) => {
+const EngageMentSection = ({ courseData }: { courseData: CourseData }) => {
   const section = courseData?.sections?.find(
-    (s: any) => s.type === "group_join_engagement"
+    (s) => s.type === "group_join_engagement"
   );
 
   if (!section || !section.values?.length) return null;
