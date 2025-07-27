@@ -5,7 +5,7 @@ import InstructorInfo from "./InstructorInfo";
 
 const CourseDetails = ({ courseData }: { courseData: any }) => {
   return (
-    <div className="px-12 space-y-10">
+    <div className=" space-y-10">
       <InstructorInfo courseData={courseData} />
       <Features courseData={courseData}/>
     </div>

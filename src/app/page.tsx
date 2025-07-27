@@ -17,11 +17,11 @@ export default async function HomePage() {
       <div>
         <Title courseData={courseData} />
       </div>
-      <div className="container mx-auto grid grid-cols-3 items-start justify-between gap-5 py-10">
+      <div className="container px-20  mx-auto grid grid-cols-3 items-start justify-between gap-5 py-10">
         <div className=" col-span-2 ">
           <CourseDetails courseData={courseData} />
         </div>
-        <div className="border col-span-1 -mt-[200px] z-20">
+        <div className=" col-span-1 -mt-[300px] z-20">
           <CourseBuy courseData={courseData} />
         </div>
       </div>
