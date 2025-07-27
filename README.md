@@ -2,8 +2,9 @@
 
 ![Project Thumbnail](./public/thumbnail.png)
 
-🌐 **Live Demo:** [https://ten-min-scl.vercel.app](Visit the Project Here)
+## 🌟 **Visit Live Demo Here!**
 
+### 👉 [https://ten-min-scl.vercel.app/](https://ten-min-scl.vercel.app/)
 ---
 
 ## 🎯 Project Overview
