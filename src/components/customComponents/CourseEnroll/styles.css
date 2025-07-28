@@ -109,12 +109,14 @@
 .swiper {
   height: 340px;
   /* border: 2px solid red; */
+  /* height: 100%; */
 }
 .mySwiper {
     height: 60px !important; 
   }
   .mySwiper .swiper-slide {
-    height: 40px !important; 
+    /* border: 2px solid red; */
+    height: 80px !important; 
   }
 
 }

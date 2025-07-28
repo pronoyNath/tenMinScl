@@ -225,3 +225,21 @@
   border-right: 8px solid rgb(249, 123, 83);
 }
 } */
+
+
+
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.sticky-popup {
+  animation: slide-up 0.4s ease-out forwards;
+}

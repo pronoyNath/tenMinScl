@@ -18,8 +18,8 @@ const Title = ({ courseData }: { courseData: CourseData }) => {
       {/* main title of course  */}
      <div className="p-0 xl:p-8">
        <div className="absolute inset-0  bg-opacity-50 z-0" />
-      <div className="container mx-auto xl:px-20">
-        <div className=" text-center xl:text-left  py-5 relative z-10 max-w-3xl lg:w-full xl:max-w-3xl mx-0 lg:mx-auto xl:mx-0   space-y-4">
+      <div className="container mx-auto px-2 md:px-10 xl:px-20 ">
+        <div className=" text-center xl:text-left  py-5 relative z-10  max-w-3xl lg:w-full xl:max-w-3xl mx-0 lg:mx-auto xl:mx-0 space-y-4">
           <h1 className="font-fontTwo text-center xl:text-left  text-xl md:text-4xl font-bold">
             {courseData?.title}
           </h1>
