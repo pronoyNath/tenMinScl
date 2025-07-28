@@ -95,7 +95,7 @@ export default function MediaCarousel({ media }: { media: MediaItem[] }) {
         freeMode={true}
         watchSlidesProgress={true}
         modules={[FreeMode, Navigation, Thumbs]}
-        className="mySwiper h-auto md:!h-[100px]"
+        className="mySwiper"
       >
         {media.map((item, idx) => {
           const isVideo = item.resource_type === "video";
